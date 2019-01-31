@@ -1,0 +1,17 @@
+{
+  "request":
+    {
+      "urlPattern": "/user/[0-9]+",
+      "method": "GET"
+    },
+
+  "response":
+    {
+      "status": 200,
+      "headers":
+        {
+          "Content-Type" : "application/json"
+        },
+      "body": "{\"id\": \"2\", \"login\": \"testUser\", \"fname\" : \"Abhilash\", \"lname\" : \"Ghosh\", \"email\" : \"test@gmail.com\"}"
+    }
+}

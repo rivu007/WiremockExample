@@ -1,0 +1,20 @@
+{
+  "request":
+    {
+      "urlPattern": "/addNewUser",
+      "method": "POST",
+      "bodyPatterns" : [{
+        "equalToJson" : "{\n  \"login\" : \"testUser\",\n  \"password\" : \"test@123\"\n}"
+      }]
+    },
+
+  "response":
+    {
+      "status": 200,
+      "headers":
+        {
+          "Content-Type" : "application/json"
+        },
+      "body": "{\"id\": \"2\", \"login\": \"testUser\", \"fname\" : \"Abhilash\", \"lname\" : \"Ghosh\", \"email\" : \"test@gmail.com\"}"
+    }
+}
